@@ -1,0 +1,5 @@
+# ignores vscode workspace file
+*.code-workspace
+
+#ignores Finder view file
+*.DS_Store

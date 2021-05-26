@@ -1,0 +1,53 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+div {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    font-weight: 300;
+    height: 20em;
+}
+
+body {
+    background-color: #272B32;
+    overflow: hidden;
+    font-size: large;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    animation: rotation 20s infinite linear; 
+    height: auto;
+    overflow: hidden;
+    pointer-events: none;
+    user-select: none;
+    /* -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none; */
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
