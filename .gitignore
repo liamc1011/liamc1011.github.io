@@ -3,3 +3,6 @@
 
 #ignores Finder view file
 *.DS_Store
+
+#ignores original list source file that i want hidden
+list-original.html
