@@ -1,0 +1,15 @@
+@use '_globals.scss';
+
+body {
+    background-color: globals.$github-bg-gray;
+    font-family: 'strawfordbold', sans-serif;
+    color: globals.$github-almostwhite;
+}
+
+/* highlight color */
+::selection{
+    background-color: #ffffff62;
+}
+::-moz-selection {
+    background: #ffffff62; /* Gecko Browsers */
+}
