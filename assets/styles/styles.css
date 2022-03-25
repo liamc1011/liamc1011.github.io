@@ -171,7 +171,17 @@ body {
   justify-content: center;
   margin-top: 35px;
   margin-bottom: 30px;
-  font-size: 30px;
+}
+.title-container h1 {
+  text-align: center;
+  width: 600px;
+  font-size: 40px;
+}
+@media screen and (max-width: 480px) {
+  .title-container h1 {
+    font-size: 30px;
+    width: 300px;
+  }
 }
 
 .image-container {
@@ -190,6 +200,7 @@ body {
       -ms-user-select: none;
           user-select: none;
 }
+
 @-webkit-keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -198,6 +209,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);

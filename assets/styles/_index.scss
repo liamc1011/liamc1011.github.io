@@ -3,7 +3,16 @@
     justify-content: center;
     margin-top: 35px;
     margin-bottom: 30px;
-    font-size: 30px;
+    
+    h1 {
+        text-align: center;
+        width: 600px;
+        font-size: 40px;
+        @media screen and (max-width: 480px){   //phones
+            font-size: 30px;
+            width: 300px;
+        }
+    }
 }
 
 .image-container {
@@ -15,12 +24,6 @@
     img {
         animation: rotation 20s infinite linear; 
         height: 300px;
-        @media screen and (max-width: 1500px){
-            // height: 100px;
-        }
-        @media screen and (max-width: 480px){
-               // height: 50px;
-        }
         pointer-events: none ;
         user-select: none;
     }
