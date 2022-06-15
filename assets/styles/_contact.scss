@@ -1,0 +1,63 @@
+@use '_globals';
+
+.id-contact {
+    background-color: globals.$pale-teal;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+        margin: 20px;
+    }
+}
+
+.get-in-touch {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.links-list {
+    list-style-type: none;
+    padding-left: 0;
+    user-select: none;
+
+    li {
+        display: inline-block;
+        // position: relative;
+        margin: 13px;
+        transition: transform 0.4s ease;
+    }
+
+    li:hover, li:focus, li:active {
+        transform: scale(1.12);
+    }
+}
+
+.email-link {
+
+    // email logo
+    img {
+        height: 40px;
+        margin-bottom: 3.2px;
+    }
+}
+
+.youtube-link {
+    
+    // youtube logo
+    img {
+        height: 56px;
+        margin-bottom: -4.8px;
+    }
+}
+
+.footer-text {
+    font-family: 'strawfordmedium';
+    font-size: 13px;
+    user-select: none;
+}

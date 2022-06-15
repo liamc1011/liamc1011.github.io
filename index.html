@@ -6,24 +6,315 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Liam Chen">
 	<meta name="description" content="Personal website">
-	<meta name="google-site-verification" content="eBIybEPflgNdyubdks0Acl4CZVCtAXioAH6TmnAKHO4">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="assets/styles/styles.css">
-	<link rel="shortcut icon" href="assets/images/favicon.ico?" type="image/x-icon">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- JQuery for all the JS stuff -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!-- ScrollReveal library -->
+	<script src="https://unpkg.com/scrollreveal"></script>
 	<!-- For Roboto from Google Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
-	<div class="enclosing-container">
-		<div class="title-container">
-			<h1>This site is undergoing changes, please come back later!</h1>
-		</div>
-		<div class="image-container">
-			<img src="assets/images/megamind-circle.png" alt="mike wazowski">
+	<nav>
+		<ul class="navbar">
+			<li>
+				<a class="hash-link" href="#intro">Home</a>
+			</li>
+			<li>
+				<a class="hash-link" href="#about">About</a> 
+			</li>
+			<li>
+				<a class="hash-link" href="#skills">Skills</a>
+			</li>
+			<li>
+				<a class="hash-link" href="#experience">Experience</a>
+			</li>
+			<li>
+				<a class="hash-link" href="#projects">Projects</a>
+			</li>
+			<li>
+				<a class="hash-link" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</nav>
+	<div id="intro" class="panel" data-id="heading">
+		<div class="intro-wrapper">
+			<header>
+				<h1>Hi, I'm <br>
+					<span>Liam Chen</span>
+				</h1>
+				<p>
+					"How we spend our days is, of course, how we spend our lives."
+				</p>
+			</header>
+			<img class="profile-pic" src="assets/images/profile.png" alt="A picture of me">
 		</div>
 	</div>
+	<div id="about" class="panel" data-id="about">
+		<h2>About Me</h2>
+		<div class="about-text-wrapper">
+			<p class="about-text">
+				Welcome! I am currently a third-year student studying Computer Science at the University of Maryland.
+				My areas of interest include automation, full-stack web development, and human-computer interaction. 
+				In my free time, I like to solve Rubik's Cubes (blindfolded) and play the drums!
+			</p>
+			<img class="cubing-pic" src="assets/images/cubing-color-changed.jpg" alt="A photo of me solving a Rubik's cube blindfolded">
+		</div>
+	</div>
+	<div id="skills" class="panel" data-id="skills">
+		<div class="skills-wrapper">
+			<div class="skills-intro-wrapper">
+				<h2>Skills</h2>
+				<div class="skills-intro">Some of my most commonly used technologies.</div>
+			</div>
+			<div class="skills-list-wrapper"> <!-- wrapper for facilitating column layout on mobile -->
+				<ul class="skills-list">
+					<li><span>Java</span></li>
+					<li><span>Python</span></li>
+					<li><span>JavaScript</span></li>
+					<li><span>Ruby</span></li>
+					<li><span>C</span></li>
+					<li><span>OCaml</span></li>
+				</ul>
+				<ul class="skills-list">
+					<li><span>HTML</span></li>
+					<li><span>CSS/Sass</span></li>
+					<li><span>Git & Github</span></li>
+					<li><span>React</span></li>
+					<li><span>PostgreSQL</span></li>
+				</ul>
+			</div>
+			<!-- <ul>
+				<li class="java badge">
+					<img src='assets/images/java-logo.svg' alt="Java logo"><span>JAVA</span>
+				</li>
+				<li class="python badge">
+					<img src='assets/images/python-logo.svg' alt="Python logo"><span>PYTHON</span>
+				</li>
+				<li class="javascript badge">
+					<img src='assets/images/js-logo.svg' alt="JavaScript logo"><span>JAVASCRIPT</span>
+				</li>
+			</ul>
+			<ul>
+				<li class="html5 badge">
+					<img src='assets/images/html-logo.svg' alt="HTML5 logo"><span>HTML</span>
+				</li>
+				<li class="css3 badge">
+					<img src='assets/images/css-logo.svg' alt="CSS3 logo"><span>CSS</span>
+				</li>
+				<li class="sass badge">
+					<img src='assets/images/sass-logo.svg' alt="Sass logo"><span>SASS</span>
+				</li>
+			</ul>
+			<ul>
+				<li class="git badge">
+					<img src='assets/images/git-logo.svg' alt="Git logo"><span>GIT</span>
+				</li>
+				<li class="github badge">
+					<img src='assets/images/github-logo.svg' alt="GitHub logo"><span>GITHUB</span>
+				</li>
+				<li class="postgres badge">
+					<img src='assets/images/postgres-logo.svg' alt="PostgreSQL logo"><span>POSTGRESQL</span>
+				</li>
+			</ul> -->
+		</div>
+	</div>
+	<div id="experience" class="panel" data-id="experience">
+		<div class="experience-wrapper">
+			<div class="experience-top-bar">
+				<h2>Experience</h2>
+				<a class="pdf-button" href="assets/resume.pdf" target="_blank">Resume</a>
+			</div>
+			<div class="experience-list-wrapper">
+				<ul class="experience-label-list">
+					<!-- NOTE: experience-label IDs must match their corresponding experience-item IDs
+					in order for ChangeExperience.js to work!! -->
+					<li class="experience-label" id="it-desk-label">UMD Divison of IT</li>
+					<li class="experience-label" id="currently-seeking-label">Currently Seeking</li>
+				</ul>
+				<div class="experience-divider"></div>
+				<div class="experience-item" id="it-desk">
+					<h4>IT Help Desk Technician</h4>
+					<p>Jul 2021 - Dec 2021</p>
+					<ul>
+						<li>
+							<span>Provide customer support, technical assistance, troubleshooting of
+								internet problems</span>
+							</li>
+							<li>
+								<span>Interact with University of Maryland students, staff, faculty</span>
+							</li>
+							<li>
+								<span>Utilize problem-solving and collaborative skills</span>
+							</li>
+						</ul>
+					</div>
+					<div class="experience-item" id="currently-seeking">
+						<h4>Always Looking for More Experience!</h4>
+						<p>Current</p>
+						<ul>
+							<li><span>I'm currently looking for a summer or fall internship or co-op! </span></li>
+							<li><span>Check the <a href="#contact">Contact</a> section below to get in touch with me.</span></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div id="projects" class="panel" data-id="projects">
+		<h2>Projects</h2>
+		<div class="project-list-container">
+			<ul class="project-list">
+				<li class="project-panel">
+					<div class="project-title">
+						<img src='assets/images/instagram.svg' alt="Instagram logo">
+						<p>Instagram Webscraper</p>
+					</div>
+					<p class="project-text">Program to quickly obtain and display Instagram follower data. Allows you to see who doesn't follow you back.</p>
+					<div class="project-bottom">
+						<p>Python, Selenium WebDriver</p>
+						<a href="https://github.com/liamc1011" target="_blank">
+							<img src="assets/images/github-white.svg" alt="GitHub logo">
+						</a>
+					</div>
+				</li>
+				<li class="project-panel">
+					<div class="project-title">
+						<img src='assets/images/gtasks.svg' alt="Google Tasks logo">
+						<p>Google Tasks Helper</p>
+					</div>
+					<p class="project-text">Program to automate creation and management of task lists in Google Tasks. </p>
+					<div class="project-bottom">
+						<p>Python, Google Tasks API</p>
+						<a href="https://github.com/liamc1011/Google-Tasks-Bot" target="_blank">
+							<img src="assets/images/github-white.svg" alt="GitHub logo">
+						</a>
+					</div>
+				</li>
+				<li class="project-panel">
+					<div class="project-title">
+						<img src='assets/images/discord.svg' alt="Discord logo">
+						<p>Discord Bot</p>
+					</div>
+					<p class="project-text">Personal bot for private server. Sends images, reads/writes JSON, fetches Reddit and YouTube data, 
+						facilitates interaction between users.</p>
+					<div class="project-bottom">
+						<p>Python, Discord API</p>
+						<a href="https://github.com/liamc1011" target="_blank">
+							<img src="assets/images/github-white.svg" alt="GitHub logo">
+						</a>
+					</div>
+				</li>
+				<li class="project-panel">
+					<div class="project-title">
+						<img src='assets/images/webpage.svg' alt="webpage icon">
+						<p>Personal Website</p>
+					</div>
+					<p class="project-text">This website! Built from the ground up with vanilla HTML, CSS, and JavaScript.</p>
+					<div class="project-bottom">
+						<p>HTML, CSS (SASS), JS </p>
+						<a href="https://github.com/liamc1011/liamc1011.github.io" target="_blank">
+							<img src="assets/images/github-white.svg" alt="GitHub logo">
+						</a>
+					</div>
+				</li>
+				<li class="project-panel">
+					<div class="project-title">
+						<img src='assets/images/maze-grid.svg' alt="a maze">
+						<p>Maze Solver</p>
+					</div>
+					<p class="project-text">Class project to find optimal paths for mazes. Implemented depth-first search, breadth-first search, and Dijkstra's
+					algorithm.</p>
+					<div class="project-bottom">
+						<p>Java, Graph Theory</p>
+						<a href="https://github.com/liamc1011" target="_blank">
+							<img src="assets/images/github-white.svg" alt="GitHub logo">
+						</a>
+					</div>
+				</li>
+				<li class="project-panel">
+					<div class="project-title">
+						<img src='assets/images/webpage.svg' alt="something">
+						<p>MicroCaml Interpreter</p>
+					</div>
+					<p class="project-text">I forgor </p>
+				</li>
+			</ul>
+		</div>
+		<!-- Spaces in between arrows so nested comments work
+		<div class="carousel-wrapper">
+			<button class="carousel-button carousel-button-left">
+				<img src="assets/images/prev-arrow.svg" alt="previous arrow">
+			</button>
+			<ul class="carousel">
+				// Comments in between list items is easiest way to remove whitespace between inline elements 
+				<li class="slide">
+					<p>yes</p>
+				</li><!- -
+				- -><li class="slide">
+					<p>no</p>
+				</li><!- -
+				- -><li class="slide">
+					<p>maybe</p>
+				</li><!- -
+				- -><li class="slide">
+					<p>yes</p>
+				</li><!- -
+				- -><li class="slide">
+					<p>no</p>
+				</li><!- -
+				- -><li class="slide">
+					<p>maybe</p>
+				</li>
+			</ul>
+			<button class="carousel-button carousel-button-right">
+				<img src="assets/images/next-arrow.svg" alt="next arrow">
+			</button>
+		</div> -->
+	</div>
+	<div id="contact" class="panel" data-id="contact">
+		<div class="contact-wrapper">
+			<h2>Contact</h2>
+			<p class="get-in-touch">Want to talk? Get in touch with me!</p>
+			<ul class='links-list'>
+				<li class="email-link">
+					<a href="mailto: liamchen@umd.edu" target="_blank"><img src='assets/images/email.svg' alt="Email icon"></a>
+				</li>
+				<li>
+					<a href="https://linkedin.com/in/liamc1011" target="_blank"><img src='assets/images/linkedin.svg' alt="Linkedin icon"></a>
+				</li>
+				<li>
+					<a href="https://github.com/liamc1011" target="_blank"><img src='assets/images/github-white.svg' alt="Github icon"></a>
+				</li>
+				<li class="youtube-link">
+					<a href="https://www.youtube.com/channel/UC3e4pD0ap7BN94ev5GE7cSg" target="_blank"><img src='assets/images/youtube.svg' alt="Youtube icon"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div>
+		<footer>
+			<div class="footer-text">
+				<p>built with ❤️ by Liam Chen</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="scripts/ChangeBGColor.js"></script>
+	<script src="scripts/NavbarHide.js"></script>
+	<script src="scripts/ScrollReveal.js"></script>
+	<script src="scripts/SmoothScroll.js"></script>
+	<script src="scripts/ChangeExperience.js"></script>
+	<script src="scripts/MobileExcuse.js"></script>
 </body>
 
 </html>

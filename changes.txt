@@ -1,9 +1,0 @@
-Changes I made to the encrypted HTML file made using www.maxlaumeister.com/pagecrypt/
-
-Overhauled HTML structure and CSS (this can be extracted)
-In JS section,
-line 155: commented it out (so that SUCCESS message doesn't print before unlocking)
-line 158: changed function timeout to 50 from 1000 (so almost instant unlocking)
-line 160: changed from invalidPassEL.style.display = "block"; to invalidPassEl.style.display = "inline"; (so that the margin and stuff works)
-line 161: inserted placeholder.style.display = "none"; (so that when invalidPassEl displays, the placeholder disappears)
-line 175: inserted placeholder.style.display = "block"; (so that when invalidPassEl disappears, the placeholder shows up again)

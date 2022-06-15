@@ -1,0 +1,49 @@
+@use '_globals';
+
+html {
+    // scroll-behavior: smooth; // not supported in Safari, IE
+    font-size: initial;
+}
+
+/* highlight color */
+::selection{
+    background-color: #ffffff62;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'strawfordregular', 'NotoSans', sans-serif;
+    transition: background-color 1.4s ease;
+    margin: 0;  //needed so navbar reaches all the way left/top
+    text-align: center;
+    line-height: 1.618;
+}
+
+//panel headings
+h2 {
+    font-size: 60px;
+    font-family: 'strawfordbold';
+    
+    @media screen and (max-width: globals.$mobile-width) {
+        font-size: 48px;
+    }
+}
+
+img {
+    user-select: none;  // disable image highlighting
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+//every separate section is a panel
+.panel {
+    min-height: 100vh; //min height in case content is higher than window height 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}

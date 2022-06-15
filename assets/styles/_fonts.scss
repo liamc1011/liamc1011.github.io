@@ -1,3 +1,10 @@
+$vs-red: #B35B65;
+$dark-teal: #1f4f57;
+$dark-blue: #33395b;
+$dark-lavender: #545c8a;
+$darkest-red: #5e3b1c;
+$off-black: #1e1f26;
+
 @font-face {
     font-family: 'strawfordblack';
     src: url('../fonts/strawford-black-webfont.eot');
@@ -76,14 +83,50 @@
 }
 
 @font-face {
-    font-family: 'geomanistblack';
-    src: url('../fonts/geomanist-black-webfont.eot');
-    src: url('../fonts/geomanist-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/geomanist-black-webfont.woff2') format('woff2'),
-         url('../fonts/geomanist-black-webfont.woff') format('woff'),
-         url('../fonts/geomanist-black-webfont.ttf') format('truetype'),
-         url('../fonts/geomanist-black-webfont.svg#geomanistregular') format('svg');
+    font-family: 'NotoSans';
+    src: url('../fonts/NotoSansTC-Regular.woff2');
+    src: url('../fonts/NotoSansTC-Regular.otf');
     font-weight: normal;
     font-style: normal;
-
 }
+
+@font-face {
+    font-family: 'NotoSansBlack';
+    src: url('../fonts/NotoSansTC-Black.woff2');
+    src: url('../fonts/NotoSansTC-Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansBold';
+    src: url('../fonts/NotoSansTC-Bold.woff2');
+    src: url('../fonts/NotoSansTC-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansMedium';
+    src: url('../fonts/NotoSansTC-Medium.woff2');
+    src: url('../fonts/NotoSansTC-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansLight';
+    src: url('../fonts/NotoSansTC-Light.woff2');
+    src: url('../fonts/NotoSansTC-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansThin';
+    src: url('../fonts/NotoSansTC-Thin.woff2');
+    src: url('../fonts/NotoSansTC-Thin.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+

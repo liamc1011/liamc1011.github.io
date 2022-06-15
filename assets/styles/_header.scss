@@ -1,0 +1,76 @@
+@use '_globals';
+
+.id-heading {
+    background-color: globals.$pale-teal;
+}
+
+#intro {
+    justify-content: center;
+    align-items: center;
+}
+
+// wrapper inside intro panel
+.intro-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+
+    @media screen and (max-width: globals.$mobile-width) {
+        width: 400px;
+        flex-direction: column;
+        margin-top: -130px; //shift up a little on mobile, it feels like flex-centered on page is too far down
+    }
+}
+
+// intro text
+header {
+    display: block;
+    width: 640px;
+    margin-right: 10%;
+    line-height: 1.1;
+    text-align: center;
+
+    @media screen and (max-width: globals.$mobile-width) {
+        width: 400px;
+        font-size: 10px;
+        margin-right: 0px;
+        // text-align: left;
+    }
+
+    //Liam Chen
+    span {
+        display: block;
+        text-align: center;
+        font-family: 'strawfordbold';
+        font-size: 100px;
+    }
+
+    //quote
+    p {
+        margin-top: 15px;
+        font-size: 12px;
+        text-align: center;
+
+        @media screen and (max-width: globals.$mobile-width) {
+            font-size: 10px;
+            margin: 30px 0px;
+        }
+    }
+}
+
+// profile picture
+.profile-pic {
+    display: block;
+    height: 300px;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    border: solid white 3px;
+    border-radius: 50%;
+
+    @media screen and (max-width: globals.$mobile-width) {
+        height: 200px;
+        width: 200px;
+    }
+}

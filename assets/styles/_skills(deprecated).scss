@@ -1,0 +1,118 @@
+// Colors of the logos here, decided not to go with this idea
+$off-black: #1e1f26;
+$java: #F19031;
+$python: #3776AB;
+$html: #F96536;
+$css: #00a9dc;
+$javascript: #F7DF1E;
+$js-darker: #e6cb00;
+$sass: #CC6699;
+$git: #FA503C;
+$github: #e6e5e5;
+$github-dark: #838383;
+$postgres: #1271ac;
+$brighter-teal: #69bfb9;
+
+// badge-color sets border color, background color, and text color of the badge itself
+@mixin badge-color($border-color, $background-color: transparent, $text-color) {
+    border-color: $border-color;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+// img-size sets height and left/right margins of the logo inside the badge
+@mixin img-size($height: 1.4rem, $margin-left: 1.1rem, $margin-right: 0.8rem) {
+    height: $height;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+}
+
+.java {
+    @include badge-color($border-color: transparent, $text-color: $brighter-teal);
+
+    img {
+        height: 2rem;
+        margin-left: 0.9rem;
+        margin-right: 0.7rem;
+    }
+}
+
+.python {
+    @include badge-color($border-color: transparent, $text-color: $brighter-teal);
+
+    img {
+        height: 1.6rem;
+        margin-left: 1rem;
+        margin-right: 0.8rem;
+    }
+}
+
+.html5 {
+    @include badge-color($border-color: transparent, $text-color: $brighter-teal);
+    
+    img {
+        height: 1.6rem;
+        margin-left: 1rem;
+        margin-right: 0.8rem;
+    }
+}
+
+.css3 {
+    @include badge-color($border-color: transparent, $text-color: $brighter-teal);
+    
+    img {
+        height: 1.6rem;
+        margin-left: 1rem;
+        margin-right: 0.8rem;
+    }
+}
+
+.javascript {
+    @include badge-color($border-color: transparent, $text-color: $brighter-teal);
+    
+    img {
+        height: 1.4rem;
+        margin-left: 1.1rem;
+        margin-right: 0.8rem;
+    }
+}
+
+.sass {
+    @include badge-color($border-color: transparent, $text-color: $brighter-teal);
+
+    img {
+        height: 1.4rem;
+        margin-left: 1.1rem;
+        margin-right: 0.8rem;
+    }
+}
+
+.git {
+    @include badge-color($border-color: transparent, $text-color: $brighter-teal);
+    
+    img {
+        height: 1.4rem;
+        margin-left: 1.1rem;
+        margin-right: 0.8rem;
+    }
+}
+
+.github {
+    @include badge-color($border-color: transparent, $text-color: $brighter-teal);
+    
+    img {
+        height: 1.5rem;
+        margin-left: 1.1rem;
+        margin-right: 0.8rem;
+    }
+}
+
+.postgres {
+    @include badge-color($border-color: transparent, $text-color: $brighter-teal);
+
+    img {
+        height: 1.4rem;
+        margin-left: 1.1rem;
+        margin-right: 0.8rem;
+    }
+}

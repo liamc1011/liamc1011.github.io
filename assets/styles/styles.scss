@@ -1,6 +1,10 @@
-@use '_globals.scss';
-@use '_fonts.scss';
-@use '_site.scss';
-@use '_password.scss';
-@use '_index.scss';
-@use '_lists.scss';
+@use '_fonts';
+@use '_globals';
+@use '_base';
+@use '_navbar';
+@use '_header';
+@use '_about';
+@use '_skills';
+@use '_experience';
+@use '_projects';
+@use '_contact';
