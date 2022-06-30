@@ -175,11 +175,19 @@ body {
 /* LIST PAGE */
 /*************************/
 
+.enclosing-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
 .list-title-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 25px;
   font-family: "strawfordbold";
 }
 .list-title-container h1 {
@@ -236,4 +244,13 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.stats {
+  font-family: 'strawfordbold';
+  font-size: 15px;
+  text-align: center;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
 }/*# sourceMappingURL=styles.css.map */
