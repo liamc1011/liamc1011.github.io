@@ -224,7 +224,7 @@ body {
 
 .heading-icon:first-of-type {
   margin-right: 9px;
-  margin-left: -1px;
+  margin-left: -2px;
 }
 
 .heading-icon:last-of-type {
@@ -239,7 +239,7 @@ body {
   margin-right: 25px;
 }
 
-.heading-icon, .checkbox {
+.heading-icon, .checkbox, .emoji {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -247,10 +247,20 @@ body {
 }
 
 .stats {
+  display: none;
   font-family: 'strawfordbold';
   font-size: 15px;
   text-align: center;
   position: fixed;
   right: 25px;
   bottom: 25px;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.emoji {
+  text-align: center;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
