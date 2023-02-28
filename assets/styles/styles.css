@@ -124,7 +124,6 @@ h2 {
 img {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -145,7 +144,6 @@ nav {
   position: fixed;
   z-index: 100;
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -167,7 +165,6 @@ nav.hide {
 
 .navbar {
   list-style-type: none;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border: 2.4px solid white;
@@ -231,8 +228,8 @@ header span {
   font-size: 100px;
 }
 header p {
-  margin-top: 15px;
-  font-size: 12px;
+  margin-top: 0px;
+  font-size: 20px;
   text-align: center;
 }
 @media screen and (max-width: 480px) {
@@ -293,7 +290,6 @@ header p {
 .about-text {
   display: block;
   width: 370px;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-right: 90px;
@@ -391,7 +387,6 @@ header p {
   list-style-type: none;
   text-align: left;
   margin-right: 40px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -512,8 +507,7 @@ header p {
 .experience-item {
   text-align: left;
   display: none;
-  -webkit-animation: fadeDiv 700ms ease-in-out both;
-          animation: fadeDiv 700ms ease-in-out both;
+  animation: fadeDiv 700ms ease-in-out both;
   transform: none;
   margin-top: 0px;
   padding-top: 0px;
@@ -563,29 +557,12 @@ header p {
   display: block;
 }
 
-@-webkit-keyframes fadeColor {
-  from {
-    color: white;
-  }
-  to {
-    color: #69bfb9;
-  }
-}
-
 @keyframes fadeColor {
   from {
     color: white;
   }
   to {
     color: #69bfb9;
-  }
-}
-@-webkit-keyframes fadeDiv {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes fadeDiv {
@@ -675,10 +652,8 @@ header p {
   font-family: "strawfordmedium";
   font-size: 18.5px;
   text-overflow: wrap;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -691,7 +666,6 @@ header p {
 .project-text {
   font-family: "strawfordlight";
   font-size: 15px;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 90%;
@@ -752,7 +726,6 @@ header p {
   padding-left: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .links-list li {
@@ -779,6 +752,5 @@ header p {
   font-size: 13px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
-}
+}/*# sourceMappingURL=styles.css.map */
