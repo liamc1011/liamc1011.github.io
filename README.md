@@ -1,4 +1,4 @@
-# [chenliam.com](https://www.chenliam.com)
+# [liamchen.com](https://www.liamchen.com)
 
 My personal website, always a work in progress. <br>
 I haven't finished optimizing for mobile screen sizes yet, sorry! <br><br>
