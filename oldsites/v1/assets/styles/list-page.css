@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "strawfordblack";
+  src: url("../fonts/strawford-black-webfont.eot");
+  src: url("../fonts/strawford-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/strawford-black-webfont.woff2") format("woff2"), url("../fonts/strawford-black-webfont.woff") format("woff"), url("../fonts/strawford-black-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "strawfordbold";
+  src: url("../fonts/strawford-bold-webfont.eot");
+  src: url("../fonts/strawford-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/strawford-bold-webfont.woff2") format("woff2"), url("../fonts/strawford-bold-webfont.woff") format("woff"), url("../fonts/strawford-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "strawfordmedium";
+  src: url("../fonts/strawford-medium-webfont.eot");
+  src: url("../fonts/strawford-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/strawford-medium-webfont.woff2") format("woff2"), url("../fonts/strawford-medium-webfont.woff") format("woff"), url("../fonts/strawford-medium-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "strawfordregular";
+  src: url("../fonts/strawford-regular-webfont.eot");
+  src: url("../fonts/strawford-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/strawford-regular-webfont.woff2") format("woff2"), url("../fonts/strawford-regular-webfont.woff") format("woff"), url("../fonts/strawford-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "strawfordthin";
+  src: url("../fonts/strawford-thin-webfont.eot");
+  src: url("../fonts/strawford-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/strawford-thin-webfont.woff2") format("woff2"), url("../fonts/strawford-thin-webfont.woff") format("woff"), url("../fonts/strawford-thin-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "strawfordlight";
+  src: url("../fonts/strawford-light-webfont.eot");
+  src: url("../fonts/strawford-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/strawford-light-webfont.woff2") format("woff2"), url("../fonts/strawford-light-webfont.woff") format("woff"), url("../fonts/strawford-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "strawfordextralight";
+  src: url("../fonts/strawford-extralight-webfont.eot");
+  src: url("../fonts/strawford-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/strawford-extralight-webfont.woff2") format("woff2"), url("../fonts/strawford-extralight-webfont.woff") format("woff"), url("../fonts/strawford-extralight-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "geomanistblack";
+  src: url("../fonts/geomanist-black-webfont.eot");
+  src: url("../fonts/geomanist-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/geomanist-black-webfont.woff2") format("woff2"), url("../fonts/geomanist-black-webfont.woff") format("woff"), url("../fonts/geomanist-black-webfont.ttf") format("truetype"), url("../fonts/geomanist-black-webfont.svg#geomanistregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #22272E;
+  font-family: "strawfordbold", sans-serif;
+  color: #AEBAC7;
+}
+
+/* highlight color */
+::-moz-selection {
+  background-color: #ffffff62;
+}
+::selection {
+  background-color: #ffffff62;
+}
+
+::-moz-selection {
+  background: #ffffff62;
+  /* Gecko Browsers */
+}
+
+/*************************/
+/* PASSWORD PAGE */
+/*************************/
+
+#dialogWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainDialog {
+  margin: 20px;
+  overflow: hidden;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+#passArea {
+  display: flex;
+  flex-direction: column;
+}
+
+#passwordPrompt {
+  font-size: 20px;
+}
+
+#password-line {
+  display: flex;
+}
+
+#pass {
+  color: #AEBAC7;
+  background-color: inherit;
+  border: none;
+  border-bottom: 5px solid #AEBAC7;
+  width: 200px;
+  height: 40px;
+  font-size: 25px;
+}
+
+#pass:focus {
+  outline: none;
+}
+
+#invalidPass {
+  color: #B35B65;
+}
+
+#success {
+  color: #7aba69;
+}
+
+#submitPass {
+  color: #AEBAC7;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 1px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: solid #AEBAC7 1px;
+  background: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#contentFrame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-message {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.error, .notifyText {
+  display: none;
+  color: #B35B65;
+}
+
+#blank-placeholder {
+  display: block;
+}
+
+/*************************/
+/* LIST PAGE */
+/*************************/
+
+.enclosing-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.list-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  font-family: "strawfordbold";
+}
+.list-title-container h1 {
+  font-size: 60px;
+}
+
+.smiley {
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.list-container {
+  display: flex;
+  font-family: "strawfordmedium";
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.list-container ul {
+  list-style-type: none;
+}
+.list-container ul li:not(:last-child) {
+  margin-bottom: 13px;
+}
+.list-container ul li:first-of-type {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.heading-icon:first-of-type {
+  margin-right: 9px;
+  margin-left: -2px;
+}
+
+.heading-icon:last-of-type {
+  margin-right: 25px;
+}
+
+.checkbox:first-of-type {
+  margin-right: 13px;
+}
+
+.checkbox:last-of-type {
+  margin-right: 25px;
+}
+
+.heading-icon, .checkbox, .emoji {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.stats {
+  display: none;
+  font-family: 'strawfordbold';
+  font-size: 15px;
+  text-align: center;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+.emoji {
+  display: none;
+  text-align: center;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

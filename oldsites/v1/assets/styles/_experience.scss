@@ -1,0 +1,186 @@
+@use '_globals';
+
+#experience {
+    flex-direction: column;
+}
+
+.id-experience {
+    background-color: globals.$off-black;
+}
+
+.experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-around;
+    // width: 90%;
+}
+
+.experience-top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+
+    @media screen and (max-width: globals.$mobile-width) {
+        width: 100px;
+        justify-content: center;
+    }
+}
+
+.pdf-button{
+    font-family: 'strawfordbold';
+    font-size: 23px;
+    padding: 7px 27px;
+    border-radius: 3rem;
+    background-color: globals.$pale-teal;
+    transition: transform 0.5s ease;
+
+    @media screen and (max-width: globals.$mobile-width) {
+        font-size: 13px;
+        padding: 4px 15px;
+        margin-left: 25px;
+    }
+}
+
+.pdf-button:hover, .pdf-button:focus {
+    transform: scale(1.05);
+}
+
+.experience-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+
+    @media screen and (max-width: globals.$mobile-width) {
+        flex-direction: column;
+    }
+}
+
+.experience-label-list {
+    list-style: none;
+    text-align: left;
+    padding-left: 0px;
+
+    @media screen and (max-width: globals.$mobile-width) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.experience-label {
+    font-family: 'strawfordmedium';
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease;
+
+    @media screen and (max-width: globals.$mobile-width) {
+        font-size: 14px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+    }
+}
+
+.experience-label:hover, .experience-label:focus {
+    transform: scale(1.05);
+    cursor: pointer;
+
+    @media screen and (max-width: globals.$mobile-width) {
+        transform: none;
+    }
+}
+
+.experience-divider {
+    width: 5px;
+    height: 250px;
+    background-color: white;
+    border-radius: 13px;
+    margin: 0px 50px;
+
+    @media screen and (max-width: globals.$mobile-width) {
+        width: 150px;
+        height: 5px;
+        margin: 0px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+}
+
+.experience-item {
+    text-align: left;
+    display: none;
+    animation: fadeDiv 700ms ease-in-out both;
+    transform: none;
+    margin-top: 0px;
+    padding-top: 0px;
+
+    //title of position
+    h4 {
+        font-family: 'strawfordmedium';
+        font-size: 27px;
+        color: globals.$brighter-teal;
+        margin: 0px;
+    }
+    
+    //date of position
+    p {
+        font-family: 'strawfordlight';
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    //list of details about position 
+    ul {
+        list-style: disc;
+        list-style-position: outside;
+        padding-left: 20px;
+        padding-top: 10px;
+        width: 500px;
+        height: 180px;
+
+        @media screen and (max-width: globals.$mobile-width) {
+            width: 300px;
+        }
+    }
+    
+    //custom color bullet points
+    li {
+        color: globals.$brighter-teal;
+    }
+    
+    //the text (without the bullet points)
+    span {
+        display: block;
+        color: white;
+        font-size: 17px;
+        padding-left: 10px; //distance from bullet points
+    }
+
+    //for the link to the Contact section under the Currently Seeking position
+    a {
+        color: globals.$brighter-teal;
+    }
+}
+
+//all experience-labels are white, except for the first one
+#mt-bank-label {
+    color: globals.$brighter-teal;
+}
+
+//all experience-items are display:none, except for the first one
+#mt-bank {
+    display: block;
+}
+
+//animation for color fade transition between experience-labels
+@keyframes fadeColor {
+    from {color: white;}
+    to {color: globals.$brighter-teal;}
+}
+
+//animation for fade transition between experience-items
+@keyframes fadeDiv {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

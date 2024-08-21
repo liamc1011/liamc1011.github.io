@@ -1,35 +1,23 @@
 @use '_globals';
 
-.id-contact {
-    background-color: globals.$pale-teal;
-}
-
 .contact-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-
-    h2 {
-        margin: 20px;
-    }
-}
-
-.get-in-touch {
-    font-size: 16px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .links-list {
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 0;        // remove default list padding
     user-select: none;
 
     li {
         display: inline-block;
         // position: relative;
-        margin: 13px;
+        margin: 11px;
         transition: transform 0.4s ease;
     }
 
@@ -42,8 +30,24 @@
 
     // email logo
     img {
-        height: 40px;
+        height: 20px;
         margin-bottom: 3.2px;
+    }
+}
+
+.linkedin-link {
+
+    // linkedin logo
+    img {
+        height: 25px;
+    }
+}
+
+.github-link {
+
+    // github logo
+    img {
+        height: 28px;
     }
 }
 
@@ -51,7 +55,7 @@
     
     // youtube logo
     img {
-        height: 56px;
+        height: 35px;
         margin-bottom: -4.8px;
     }
 }

@@ -93,32 +93,13 @@ html {
   font-size: initial;
 }
 
-/* highlight color */
-::-moz-selection {
-  background-color: rgba(255, 255, 255, 0.3843137255);
-}
-::selection {
-  background-color: rgba(255, 255, 255, 0.3843137255);
-}
-
 body {
   color: white;
-  background-color: black;
-  font-family: "strawfordregular", "NotoSans", sans-serif;
-  transition: background-color 1.4s ease;
+  background-color: #1e1f26;
+  font-family: "strawfordregular", "Inter", sans-serif;
   margin: 0;
   text-align: center;
   line-height: 1.618;
-}
-
-h2 {
-  font-size: 60px;
-  font-family: "strawfordbold";
-}
-@media screen and (max-width: 480px) {
-  h2 {
-    font-size: 48px;
-  }
 }
 
 img {
@@ -132,60 +113,19 @@ a {
   text-decoration: none;
 }
 
+/* highlight color */
+::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.3843137255);
+}
+::selection {
+  background-color: rgba(255, 255, 255, 0.3843137255);
+}
+
 .panel {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-}
-
-nav {
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  transition: transform 300ms;
-  font-family: "strawfordmedium";
-}
-nav.hide {
-  transform: translateY(-100%);
-}
-@media screen and (max-width: 480px) {
-  nav {
-    display: none;
-  }
-}
-
-.navbar {
-  list-style-type: none;
-  width: -moz-fit-content;
-  width: fit-content;
-  border: 2.4px solid white;
-  border-radius: 32px;
-  padding: 5px 5px;
-  margin: 10px;
-  background-color: #ffffff;
-}
-.navbar li {
-  display: inline-block;
-  margin: 0 6px;
-  padding: 0;
-}
-
-.hash-link {
-  font-size: 14px;
-  color: #517b78;
-}
-
-.id-heading {
-  background-color: #517b78;
 }
 
 #intro {
@@ -197,512 +137,43 @@ nav.hide {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 900px;
+  flex-direction: column;
 }
 @media screen and (max-width: 480px) {
   .intro-wrapper {
-    width: 400px;
-    flex-direction: column;
     margin-top: -130px;
   }
 }
 
-header {
-  display: block;
-  width: 640px;
-  margin-right: 10%;
-  line-height: 1.1;
-  text-align: center;
+#renovating {
+  font-size: 32px;
 }
 @media screen and (max-width: 480px) {
-  header {
-    width: 400px;
-    font-size: 10px;
+  #renovating {
+    font-size: 25px;
     margin-right: 0px;
   }
 }
-header span {
-  display: block;
-  text-align: center;
-  font-family: "strawfordbold";
-  font-size: 100px;
-}
-header p {
-  margin-top: 0px;
-  font-size: 20px;
-  text-align: center;
-}
-@media screen and (max-width: 480px) {
-  header p {
-    font-size: 10px;
-    margin: 30px 0px;
-  }
+
+#smiley {
+  display: inline-block;
+  padding-left: 10px;
+  position: relative;
+  top: 5px;
 }
 
-.profile-pic {
+.construction-gif {
   display: block;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   padding: 0;
-  margin: 0;
-  border: solid white 3px;
-  border-radius: 50%;
+  margin: 20px;
 }
 @media screen and (max-width: 480px) {
-  .profile-pic {
+  .construction-gif {
     height: 200px;
     width: 200px;
   }
-}
-
-.id-about {
-  background-color: #1e1f26;
-}
-
-#about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#about h2 {
-  margin-bottom: 70px;
-}
-@media screen and (max-width: 480px) {
-  #about h2 {
-    margin-bottom: 40px;
-  }
-}
-
-.about-text-wrapper {
-  width: 1152px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 480px) {
-  .about-text-wrapper {
-    width: 200px;
-    flex-direction: column;
-  }
-}
-
-.about-text {
-  display: block;
-  width: 370px;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-right: 90px;
-  text-align: justify;
-  font-size: 16px;
-  font-family: "strawfordregular";
-}
-@media screen and (max-width: 480px) {
-  .about-text {
-    width: 300px;
-    margin-right: 0px;
-    margin-bottom: 40px;
-    line-height: 1.4;
-  }
-}
-
-.about-text::before {
-  content: "";
-  display: block;
-  background-color: #69bfb9;
-  width: 22%;
-  height: 6px;
-  border-radius: 13px;
-  margin-bottom: 20px;
-}
-
-.cubing-pic {
-  width: 380px;
-  border-radius: 33px;
-  border: 2px solid white;
-}
-@media screen and (max-width: 480px) {
-  .cubing-pic {
-    width: 300px;
-  }
-}
-
-.id-skills {
-  background-color: #1e1f26;
-}
-
-.skills-wrapper {
-  display: flex;
-}
-@media screen and (max-width: 480px) {
-  .skills-wrapper {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.skills-intro-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-right: 40px;
-}
-@media screen and (max-width: 480px) {
-  .skills-intro-wrapper {
-    margin-right: 45px;
-    margin-bottom: 40px;
-  }
-}
-.skills-intro-wrapper h2 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: left;
-}
-
-.skills-intro {
-  font-size: 16px;
-  text-align: left;
-  width: 230px;
-}
-
-.skills-intro::before {
-  content: "";
-  display: block;
-  background-color: #69bfb9;
-  width: 50%;
-  height: 5px;
-  border-radius: 13px;
-  margin: 15px 0px;
-}
-
-.skills-list-wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-.skills-list {
-  font-family: "strawfordmedium";
-  color: #69bfb9;
-  font-size: 19px;
-  list-style-type: none;
-  text-align: left;
-  margin-right: 40px;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-/**************************/
-/* Old Skills section that I changed */
-#experience {
-  flex-direction: column;
-}
-
-.id-experience {
-  background-color: #1e1f26;
-}
-
-.experience-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.experience-top-bar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 800px;
-}
-@media screen and (max-width: 480px) {
-  .experience-top-bar {
-    width: 100px;
-    justify-content: center;
-  }
-}
-
-.pdf-button {
-  font-family: "strawfordbold";
-  font-size: 23px;
-  padding: 7px 27px;
-  border-radius: 3rem;
-  background-color: #517b78;
-  transition: transform 0.5s ease;
-}
-@media screen and (max-width: 480px) {
-  .pdf-button {
-    font-size: 13px;
-    padding: 4px 15px;
-    margin-left: 25px;
-  }
-}
-
-.pdf-button:hover, .pdf-button:focus {
-  transform: scale(1.05);
-}
-
-.experience-list-wrapper {
-  display: flex;
-  flex-direction: row;
-}
-@media screen and (max-width: 480px) {
-  .experience-list-wrapper {
-    flex-direction: column;
-  }
-}
-
-.experience-label-list {
-  list-style: none;
-  text-align: left;
-  padding-left: 0px;
-}
-@media screen and (max-width: 480px) {
-  .experience-label-list {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.experience-label {
-  font-family: "strawfordmedium";
-  font-size: 18px;
-  margin-bottom: 20px;
-  transition: transform 0.4s ease;
-}
-@media screen and (max-width: 480px) {
-  .experience-label {
-    font-size: 14px;
-    margin-bottom: 0px;
-    margin-right: 20px;
-  }
-}
-
-.experience-label:hover, .experience-label:focus {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-@media screen and (max-width: 480px) {
-  .experience-label:hover, .experience-label:focus {
-    transform: none;
-  }
-}
-
-.experience-divider {
-  width: 5px;
-  height: 250px;
-  background-color: white;
-  border-radius: 13px;
-  margin: 0px 50px;
-}
-@media screen and (max-width: 480px) {
-  .experience-divider {
-    width: 150px;
-    height: 5px;
-    margin: 0px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-  }
-}
-
-.experience-item {
-  text-align: left;
-  display: none;
-  animation: fadeDiv 700ms ease-in-out both;
-  transform: none;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-.experience-item h4 {
-  font-family: "strawfordmedium";
-  font-size: 27px;
-  color: #69bfb9;
-  margin: 0px;
-}
-.experience-item p {
-  font-family: "strawfordlight";
-  font-size: 15px;
-  margin: 0px;
-}
-.experience-item ul {
-  list-style: disc;
-  list-style-position: outside;
-  padding-left: 20px;
-  padding-top: 10px;
-  width: 500px;
-  height: 180px;
-}
-@media screen and (max-width: 480px) {
-  .experience-item ul {
-    width: 300px;
-  }
-}
-.experience-item li {
-  color: #69bfb9;
-}
-.experience-item span {
-  display: block;
-  color: white;
-  font-size: 17px;
-  padding-left: 10px;
-}
-.experience-item a {
-  color: #69bfb9;
-}
-
-#mt-bank-label {
-  color: #69bfb9;
-}
-
-#mt-bank {
-  display: block;
-}
-
-@keyframes fadeColor {
-  from {
-    color: white;
-  }
-  to {
-    color: #69bfb9;
-  }
-}
-@keyframes fadeDiv {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.id-projects {
-  background-color: #1e1f26;
-}
-
-#projects {
-  flex-direction: column;
-}
-
-.project-list-container {
-  width: 1100px;
-  display: flex;
-  justify-content: center;
-}
-@media screen and (max-width: 480px) {
-  .project-list-container {
-    width: 300px;
-  }
-}
-
-.project-list {
-  list-style: none;
-  padding: 0px;
-  margin: none;
-}
-@media screen and (max-width: 480px) {
-  .project-list {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    height: 400px;
-  }
-}
-
-.project-panel {
-  display: inline-flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: flex-start;
-  padding-left: 22px;
-  border-top: 3px solid white;
-  border-left: 3px solid white;
-  border-top-left-radius: 38px;
-  margin: 10px;
-  margin-bottom: 20px;
-  height: 273px;
-  width: 245px;
-  transition: transform 0.5s ease, color 0.5s;
-  color: white;
-}
-@media screen and (max-width: 480px) {
-  .project-panel {
-    width: 300px;
-  }
-}
-
-.project-panel:hover, .project-panel:focus {
-  transform: scale(1.04);
-  color: #69bfb9;
-}
-
-.project-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.project-title img {
-  width: 24px;
-  margin-right: 16px;
-}
-@media screen and (max-width: 480px) {
-  .project-title img {
-    width: 15px;
-  }
-}
-.project-title p {
-  font-family: "strawfordmedium";
-  font-size: 18.5px;
-  text-overflow: wrap;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-@media screen and (max-width: 480px) {
-  .project-title p {
-    font-size: 15px;
-  }
-}
-
-.project-text {
-  font-family: "strawfordlight";
-  font-size: 15px;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 90%;
-  text-align: left;
-}
-@media screen and (max-width: 480px) {
-  .project-text {
-    font-size: 13px;
-  }
-}
-
-.project-bottom {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-self: center;
-  margin-top: auto;
-  width: 100%;
-}
-.project-bottom img {
-  width: 20px;
-  height: 20px;
-  margin-right: 16px;
-  margin-bottom: -4px;
-}
-.project-bottom p {
-  color: #bdbdbd;
-  font-size: 13px;
-  flex-basis: 100%;
-  text-align: left;
-}
-
-/*****************************/
-/* Old carousel that I changed */
-/*****************************/
-.id-contact {
-  background-color: #517b78;
 }
 
 .contact-wrapper {
@@ -711,14 +182,7 @@ header p {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-.contact-wrapper h2 {
   margin: 20px;
-}
-
-.get-in-touch {
-  font-size: 16px;
-  margin-bottom: 20px;
 }
 
 .links-list {
@@ -730,7 +194,7 @@ header p {
 }
 .links-list li {
   display: inline-block;
-  margin: 13px;
+  margin: 11px;
   transition: transform 0.4s ease;
 }
 .links-list li:hover, .links-list li:focus, .links-list li:active {
@@ -738,12 +202,20 @@ header p {
 }
 
 .email-link img {
-  height: 40px;
+  height: 20px;
   margin-bottom: 3.2px;
 }
 
+.linkedin-link img {
+  height: 25px;
+}
+
+.github-link img {
+  height: 28px;
+}
+
 .youtube-link img {
-  height: 56px;
+  height: 35px;
   margin-bottom: -4.8px;
 }
 

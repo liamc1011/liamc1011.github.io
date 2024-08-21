@@ -1,0 +1,49 @@
+@use '_globals';
+
+nav {
+    position: fixed;
+    z-index: 100;   // displays on top of everything
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;  // ul to the right
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    transition: transform 300ms;
+    font-family: 'strawfordmedium';
+
+    &.hide {
+        transform: translateY(-100%);
+    }
+
+    @media screen and (max-width: globals.$mobile-width) {
+        display: none;
+    }
+}
+
+// navigation bar ul
+.navbar {
+    list-style-type: none;
+    width: fit-content;
+    border: 2.4px solid white;
+    border-radius: 32px;
+    padding: 5px 5px;
+    margin: 10px;
+    // backdrop-filter: blur(40px);    // not supported Firefox and IE, implement fallback?
+    background-color: #ffffff;   // Firefox fallback, make .hash-link black too
+
+    // items in navbar
+    li {
+        display: inline-block;
+        margin: 0 6px; // shortcut with 2 values = top/bottom left/right
+        padding: 0;
+    }
+}
+
+// links/text in navbar items
+.hash-link {
+    font-size: 14px;
+    color: globals.$pale-teal;
+    // transition: 1s ease;    // if changing text color for opaque navbar
+}
