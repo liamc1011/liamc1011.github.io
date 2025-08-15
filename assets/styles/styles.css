@@ -176,6 +176,10 @@ a {
   }
 }
 
+#brick-counter {
+  font-size: 20px;
+}
+
 .contact-wrapper {
   display: flex;
   flex-direction: column;
